@@ -8,8 +8,8 @@
     <h4>{{ $comic->id }}</h4>
     <p> {{ $comic->title }} </p>
     <p> {{ $comic->type }} </p>
-    <p> {{ $comic->description }} </p>
     <p> {{ $comic->series }} </p>
+    <a href="{{ route('comics.show', $comic) }}">SHOW</a>
     
   @endforeach
   
