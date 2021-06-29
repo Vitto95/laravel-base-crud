@@ -8,7 +8,7 @@
       <a href="{{ route('comics.index') }}">I nostri fumetti</a>
     </li>
     <li>
-      <a href="#">Nuovo Fumetto</a>
+      <a href="{{ route('comics.create') }}">Nuovo Fumetto</a>
     </li>
     <li>
       <a href="#">Contatti</a>
