@@ -19,7 +19,9 @@
       <th scope="col">ID</th>
       <th scope="col">Title</th>
       <th scope="col">Type</th>
-      <th scope="col">Series</th>
+      <th scope="col">Show</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -30,6 +32,8 @@
       <td>{{ $comic->title }}</td>
       <td>{{ $comic->type }}</td>
       <td><a href="{{ route('comics.show', $comic) }}">SHOW</a></td>
+      <td><a href="{{route('comics.edit', $comic)}}">EDIT</a></td>
+      <td><a href="#">DELETE</a></td>
     </tr>
     @endforeach
    
